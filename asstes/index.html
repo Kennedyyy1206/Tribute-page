@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="utf-8">
+  <title>MhonLuds Feedback</title>
+  <link rel="stylesheet" href = styles.css>
+</head>
 
+<body>
+  <h1 id="title">MhonLuds Feedback</h1>
+  <p id="description">We are kindly asking you to help us improve to make your cleaning experience more gentler!</p>
+  <form id="survey-form">
+    <div class="form-group">
+          <label id="name-label" for="name">Name:</label>
+          <input type="text" id="name"  placeholder="Enter your name" required />
+        </div>
+    <div class="form-group">
+          <label id="number-label" for="number">Number:</label>
+          <input type="number" id="number" min="20" max="120" placeholder="Enter #" required/>
+    </div>
+   
+    <div class="form-group">
+          <label id="email-label" for="email">Email:</label>
+          <input type="email"  id="email" placeholder="Enter your email" required/>
+    </div>
+
+    <div class="form-group">
+          <label for="dropdown">Would you recommend this?</label>
+          <select id="dropdown">
+          <option value=""yes> Yes</option>
+          <option value=""no> No</option>
+          <option value=""no> I don't know</option>
+          </select>
+    </div>
+
+    <div class="form-group">
+      <p>Does this deserve to get promoted</p>
+          <label>
+          <input type="radio" name="promote" value="definitely" checked/>It's really good definitely will order again!
+          </label>
+    </div>
+
+    <div class="form-group">
+
+          <label>
+          <input type="radio" name="promote" value="maybe" />No, I wouldn't recommend because irritates me
+          </label>
+    </div>
+        <div class="form-group">
+          <p>
+            What do you want us to improve more?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+<label>
+  <input type="checkbox" name="prefer" value="ingridients" class="input-checkbox" />
+  Add some other ingridients
+</label>
+
+<label>
+  <input type="checkbox" name="prefer" value="products" class="input-checkbox" />
+  Gentle on hands / Moisturizing
+</label>
+
+<label>
+  <input type="checkbox" name="prefer" value="products" class="input-checkbox" />
+  Fragrance-free / No harsh smells
+</label>
+
+
+<div class="form-group">
+  <p> Any comments or suggestions? put it all down here</p>
+  <textarea placeholder="Enter your comments here or suggestions!"></textarea>
+  </div>
+<button type="submit" id="submit">Submit</button>
+
+  </form>
+
+
+</body>
